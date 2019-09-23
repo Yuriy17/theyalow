@@ -70,3 +70,9 @@ font-style: normal;
 font-weight: normal;
 src: local('Lucida Sans Typewriter Bold Oblique'), url('../fonts/lucida-sans-cufonfonts-webfont/LTYPEBO.woff') format('woff');
 }
+@font-face {
+    font-family: 'Segoe WP';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Segoe WP'), url('../fonts/segoe-wp-cufonfonts-webfont/SegoeWP.woff') format('woff');
+}
