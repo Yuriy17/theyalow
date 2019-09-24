@@ -76,3 +76,96 @@ src: local('Lucida Sans Typewriter Bold Oblique'), url('../fonts/lucida-sans-cuf
     font-weight: normal;
     src: local('Segoe WP'), url('../fonts/segoe-wp-cufonfonts-webfont/SegoeWP.woff') format('woff');
 }
+
+@font-face {
+font-family: 'Asap Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Asap Regular'), url('../fonts/asap-cufonfonts-webfont/Asap-Regular.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Asap Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Asap Italic'), url('../fonts/asap-cufonfonts-webfont/Asap-Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Asap Medium';
+font-style: normal;
+font-weight: normal;
+src: local('Asap Medium'), url('../fonts/asap-cufonfonts-webfont/Asap-Medium.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Asap Medium Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Asap Medium Italic'), url('../fonts/asap-cufonfonts-webfont/Asap-MediumItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Asap SemiBold';
+font-style: normal;
+font-weight: normal;
+src: local('Asap SemiBold'), url('../fonts/asap-cufonfonts-webfont/Asap-SemiBold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Asap SemiBold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Asap SemiBold Italic'), url('../fonts/asap-cufonfonts-webfont/Asap-SemiBoldItalic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Asap Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Asap Bold'), url('../fonts/asap-cufonfonts-webfont/Asap-Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Asap Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Asap Bold Italic'), url('../fonts/asap-cufonfonts-webfont/Asap-BoldItalic.woff') format('woff');
+}
+@font-face {
+font-family: 'Segoe UI Regular';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Regular'), url('../fonts/segoe-ui-4-cufonfonts-webfont/Segoe UI.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Segoe UI Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Italic'), url('../fonts/segoe-ui-4-cufonfonts-webfont/Segoe UI Italic.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Segoe UI Bold';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Bold'), url('../fonts/segoe-ui-4-cufonfonts-webfont/Segoe UI Bold.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Segoe UI Bold Italic';
+font-style: normal;
+font-weight: normal;
+src: local('Segoe UI Bold Italic'), url('../fonts/segoe-ui-4-cufonfonts-webfont/Segoe UI Bold Italic.woff') format('woff');
+}
