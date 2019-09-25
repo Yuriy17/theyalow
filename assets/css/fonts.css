@@ -146,3 +146,9 @@ font-style: normal;
 font-weight: normal;
 src: local('Segoe UI Light'), url('../fonts/seagoi-ui-light.ttf') format('woff');
 }
+@font-face {
+font-family: 'PT Sans Regular';
+font-style: normal;
+font-weight: normal;
+src: local('PT Sans Regular'), url('../fonts/pt-sans/PTS55F.ttf') format('woff');
+}

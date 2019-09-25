@@ -156,70 +156,77 @@ h1{
   margin-top: 299px;
 }
 /* ICON_AREA */
-.icon_area>.inner_wrapper{
+.icon_area > .inner_wrapper{
   display: flex;
   align-items: stretch;
-  justify-content: space-around;
 }
-.icon_area a{
-  margin: 0 auto;
-  display: flex;
+.icon_area ul{
   flex-grow: 1;
-  height: 212px;
-  width: 340px;
+  display: flex;
+  align-items: stretch;
+}
+.icon_area ul li{
+  width: 339px;
+  display: flex;
   flex-direction: column;
-  justify-content: center;
-  text-decoration: none;
+    align-items: center;
   border-left: solid;
   border-left-width: 1px;
   border-left-color: #d4d4d4;
-  font-size: 27px;
-  letter-spacing: 0px;
-  color: #000000;
-  font-family: "Segoe UI Light";
-  font-weight: 300;
-  text-align: center;
 }
-
-.icon_area a:last-child{
+.icon_area ul li:last-child{
   border-right: solid;
   border-right-width: 1px;
   border-right-color: #d4d4d4;
 }
-.icon_area a:nth-child(1)>span{
-  margin-top: 13px;
-  margin-bottom: -25px;
+.icon_area ul li a{
+  text-decoration: none;
+    font-size: 27px;
+  letter-spacing: 0px;
+  color: #000000;
+  font-family: "Segoe UI Light";
+  font-weight: 300;
+}
+.icon_area li:nth-child(1)>svg{
+  margin-top: 60px;
+  margin-bottom: 14px;
+  margin-left: -8px;
+}
+.icon_area li:nth-child(1)>a{
   margin-left: 17px;
 }
-.icon_area a:nth-child(1)>object{
-  margin-left: -7px;
+.icon_area li:nth-child(2)>svg{
+  margin-top: 36px;
+  margin-bottom: 18px;
+  margin-left: 21px;
 }
-.icon_area a:nth-child(1)>object:hover{
-  box-shadow: 2.5px 4.33px 0px; 
+.icon_area li:nth-child(2)>a{
+  margin-left: 17px;
 }
-.icon_area a:nth-child(2)>span{
-  margin-top: 16px;
-  margin-bottom: -3px;
-  margin-left: 18px;
+.icon_area li:nth-child(3)>svg{
+  margin-top: 53px;
+  margin-bottom: 13px;
+  margin-left: -22px;
 }
-.icon_area a:nth-child(2)>object{
-  margin-left: 22px;
+.icon_area li:nth-child(3)>a{
+  margin-left: -16px;
 }
-.icon_area a:nth-child(3)>span{
-  margin-bottom: -18px;
-  margin-top: 13px;
-  margin-left: -15px;
-}
-.icon_area a:nth-child(3)>object{
-  margin-left: -20px;
+.icon_area tspan { white-space:pre }
+.icon_area .shp0 { fill: #f5c506 } 
+
+.icon_area .icon:hover {
+    -webkit-filter: drop-shadow(0 6px 1px rgba(0,0,0,0.5));      
+    filter: drop-shadow(0 6px 1px rgba(0,0,0,0.5));  
 }
 /* SECTION_1 */
 #title{
   display: flex;
+  align-items: center;
   height: 110px;
   font-size: 37px;
   letter-spacing: 0px;
   color: #ffffff;
-  font-family: "PT Sans";
+  font-family: "PT Sans Regular";
   font-weight: 400;
 }
+
