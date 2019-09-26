@@ -429,3 +429,34 @@ span.dot{
   margin-left: -32px;
   margin-right: 18px;
 }
+footer>.inner_wrapper{
+  display: flex;
+  height: 64px;
+  padding-top: 15px;
+  padding-left: 9px;
+}
+
+footer>.inner_wrapper>svg{
+  tspan { white-space:pre }
+  .shp0 { fill: #f5c506 } 
+}
+footer tspan { white-space:pre }
+footer .shp0 { fill: #f5c506 } 
+
+footer>.inner_wrapper>svg:nth-child(2) .shp0{
+  opacity: 0.502;
+}
+footer>.inner_wrapper>svg:nth-child(1){
+  z-index: 1;
+} 
+footer>.inner_wrapper>svg:nth-child(2){
+  position: absolute;
+  z-index: 2;
+} 
+footer>.inner_wrapper>h2{
+  font-size: 29px;
+  letter-spacing: 0px;
+  color: #ffffff;
+  font-family: "Lucida Sans Italic";
+  text-align: center;
+}
