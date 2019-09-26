@@ -152,3 +152,9 @@ font-style: normal;
 font-weight: normal;
 src: local('PT Sans Regular'), url('../fonts/pt-sans/PTS55F.ttf') format('woff');
 }
+@font-face {
+font-family: 'Open Sans';
+font-style: normal;
+font-weight: normal;
+src: local('Open Sans'), url('../fonts/OpenSans-Regular.ttf') format('woff');
+}
