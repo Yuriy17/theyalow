@@ -16,20 +16,24 @@
   background-image: url("../images/Layer7.png");
   display: flex;
   height: 212px;
+  -webkit-box-shadow: 0px -3px 5px -2px rgba(0,0,0,0.61);
+  -moz-box-shadow: 0px -3px 5px -2px rgba(0,0,0,0.61);
+  box-shadow: 0px -3px 5px -2px rgba(0,0,0,0.61);
 }
 .section_1{
+  -webkit-box-shadow: inset 0px 3px 5px -2px rgba(0,0,0,0.61);
+  -moz-box-shadow: inset 0px 3px 5px -2px rgba(0,0,0,0.61);
+  box-shadow: inset 0px 3px 5px -2px rgba(0,0,0,0.61);
   background-image: url("../images/Layer10copy3.png");
   height: 509px;
 }
 .section_2{
   background-image: url("../images/Layer32.png");
-  height: 499px;
+  height: 496px;
 }
 footer{
-  background-image: url("../images/Layer31.png");
-  background-size: cover;
-  height: 76px;
-  margin: -11px 0 0 -6px;
+  box-shadow: -0.105px -2.998px 5px rgba(0,0,0,0.75);
+  background: #4c4c4c;
 }
 header{
   display: flex;
@@ -64,31 +68,40 @@ header>.title, #list{
   display: flex;
   align-items: flex-end; 
 }
-.rectangle{
+/* .rectangle{
   width: 453px;
   height: 41px;
   background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
   background-image: -webkit-linear-gradient(bottom, #f5c505 0%, #f5c505 100%);
   background-image: -o-linear-gradient(bottom, #f5c505 0%, #f5c505 100%);
   background-image: linear-gradient(to top, #f5c505 0%, #f5c505 100%);
-}
-.rectangle1{
+} */
+.rectangle{
   display: flex;
   align-items: center;
   justify-content: stretch;
-  z-index: 3;
+  /* z-index: 3; */
+  width: 453px;
+  height: 41px;
+  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
+  background-image: -webkit-linear-gradient(bottom, #f5c505 0%, #f5c505 100%);
+  background-image: -o-linear-gradient(bottom, #f5c505 0%, #f5c505 100%);
+  background-image: linear-gradient(to top, #f5c505 0%, #f5c505 100%);
+  -webkit-box-shadow: -8px -8px 0px 0px rgba(245,197,5,0.27),-4px -5px 0px 0px rgba(245,197,5,0.27);
+  -moz-box-shadow: -8px -8px 0px 0px rgba(245,197,5,0.27),-4px -5px 0px 0px rgba(245,197,5,0.27);
+  box-shadow: -8px -8px 0px 0px rgba(245,197,5,0.27),-4px -5px 0px 0px rgba(245,197,5,0.27);
 }
-.rectangle1 ul{
+.rectangle ul{
   display: flex;
   flex-grow: 1;
   display: flex;
 }
-.rectangle1 ul li{
+.rectangle ul li{
   display: flex;
   flex-grow: 1;
   border-right: 1px solid #9b7d08;
 }
-.rectangle1 ul li a{
+.rectangle ul li a{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -100,10 +113,10 @@ header>.title, #list{
   text-decoration: none;
   font-family: "Segoe WP";
 }
-.rectangle1 ul li a::after{
+.rectangle ul li a::after{
   border-right: none;
 }
-.rectangle2{
+/* .rectangle2{
   opacity: 0.27;
   z-index: 2;
   position: absolute;
@@ -116,7 +129,7 @@ header>.title, #list{
   position: absolute;
   margin-top: -8px;
   margin-left: -8px;
-}
+} */
 /*BANNER*/
 .banner .video{
   flex-grow: 1;
@@ -432,8 +445,6 @@ span.dot{
 footer>.inner_wrapper{
   display: flex;
   height: 64px;
-  padding-top: 15px;
-  padding-left: 9px;
 }
 
 footer>.inner_wrapper>svg{
@@ -443,15 +454,16 @@ footer>.inner_wrapper>svg{
 footer tspan { white-space:pre }
 footer .shp0 { fill: #f5c506 } 
 
-footer>.inner_wrapper>svg:nth-child(2) .shp0{
+footer>.inner_wrapper>svg:nth-child(1) .shp0{
   opacity: 0.502;
 }
 footer>.inner_wrapper>svg:nth-child(1){
-  z-index: 1;
-} 
-footer>.inner_wrapper>svg:nth-child(2){
   position: absolute;
-  z-index: 2;
+  margin-top: 7px;
+}  
+footer>.inner_wrapper>svg:nth-child(2){
+  margin-left: -2px;
+  margin-top: 5px;
 } 
 footer>.inner_wrapper>h2{
   font-size: 29px;
@@ -459,4 +471,6 @@ footer>.inner_wrapper>h2{
   color: #ffffff;
   font-family: "Lucida Sans Italic";
   text-align: center;
+  margin-top: 19px;
+  margin-left: 7px;
 }
