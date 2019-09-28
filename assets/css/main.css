@@ -42,8 +42,8 @@ header{
 }
 .banner{
   display: flex;
-  align-content: stretch;
-  height: 454px;
+  height: 327px;
+  margin-top: 56px;
 }
 /*HEADER */
 
@@ -68,19 +68,10 @@ header>.title, #list{
   display: flex;
   align-items: flex-end; 
 }
-/* .rectangle{
-  width: 453px;
-  height: 41px;
-  background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
-  background-image: -webkit-linear-gradient(bottom, #f5c505 0%, #f5c505 100%);
-  background-image: -o-linear-gradient(bottom, #f5c505 0%, #f5c505 100%);
-  background-image: linear-gradient(to top, #f5c505 0%, #f5c505 100%);
-} */
 .rectangle{
   display: flex;
   align-items: center;
   justify-content: stretch;
-  /* z-index: 3; */
   width: 453px;
   height: 41px;
   background-image: linear-gradient(0deg, #f5c505 0%, #f5c505 100%);
@@ -96,12 +87,12 @@ header>.title, #list{
   flex-grow: 1;
   display: flex;
 }
-.rectangle ul li{
+.item{
   display: flex;
   flex-grow: 1;
   border-right: 1px solid #9b7d08;
 }
-.rectangle ul li a{
+.item a{
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -113,53 +104,43 @@ header>.title, #list{
   text-decoration: none;
   font-family: "Segoe WP";
 }
-.rectangle ul li a::after{
+.item a::after{
   border-right: none;
 }
-/* .rectangle2{
-  opacity: 0.27;
-  z-index: 2;
-  position: absolute;
-  margin-top: -5px;
-  margin-left: -4px;
-}
-.rectangle3{
-  opacity: 0.27;
-  z-index: 1;
-  position: absolute;
-  margin-top: -8px;
-  margin-left: -8px;
-} */
+
 /*BANNER*/
 .banner .video{
-  flex-grow: 1;
+  width: 56%;
 }
 .banner video{
-  width: 549px;
-  margin-left: 10px;
-  margin-top: 56px;
+  padding: 0 9px;
 }
-.banner label{
+.video img{
+  position: absolute;
+  width: 549px;
+  margin-left: -557px;
+}
+label[for=poster]{
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
+  width: 44%;
 }
-.banner label h2{
+label[for=poster]>h2{
   font-size: 63px;
   letter-spacing: 1px;
   font-family: "Asap Regular";
   font-weight: 400;
   text-align: center;
 }
-.banner label h2:first-child{
+label[for=poster]>h2:first-child{
   color: #f5c506;
-  margin-top: 138px;
-  margin-left: -13px;
+  margin-top: 82px;
+  margin-left: 10px;
 }
-.banner label h2:last-child{
+label[for=poster]>h2:last-child{
   color: #fff;
   margin-top: 12px;
-  margin-left: 2px;
+  margin-left: 26px;
 }
 .nav-buttons{
   display: flex;
@@ -178,7 +159,7 @@ header>.title, #list{
   display: flex;
   align-items: stretch;
 }
-.icon_area ul li{
+.icon_item{
   width: 339px;
   display: flex;
   flex-direction: column;
@@ -187,12 +168,12 @@ header>.title, #list{
   border-left-width: 1px;
   border-left-color: #d4d4d4;
 }
-.icon_area ul li:last-child{
+.icon_item:last-child{
   border-right: solid;
   border-right-width: 1px;
   border-right-color: #d4d4d4;
 }
-.icon_area ul li a{
+.icon_item a{
   text-decoration: none;
     font-size: 27px;
   letter-spacing: 0px;
@@ -200,34 +181,34 @@ header>.title, #list{
   font-family: "Segoe UI Light";
   font-weight: 300;
 }
-.icon_area li:nth-child(1)>svg{
+.icon_item:nth-child(1)>svg{
   margin-top: 60px;
   margin-bottom: 14px;
   margin-left: -8px;
 }
-.icon_area li:nth-child(1)>a{
+.icon_item:nth-child(1)>a{
   margin-left: 17px;
 }
-.icon_area li:nth-child(2)>svg{
+.icon_item:nth-child(2)>svg{
   margin-top: 36px;
   margin-bottom: 18px;
   margin-left: 21px;
 }
-.icon_area li:nth-child(2)>a{
+.icon_item:nth-child(2)>a{
   margin-left: 17px;
 }
-.icon_area li:nth-child(3)>svg{
+.icon_item:nth-child(3)>svg{
   margin-top: 53px;
   margin-bottom: 13px;
   margin-left: -22px;
 }
-.icon_area li:nth-child(3)>a{
+.icon_item:nth-child(3)>a{
   margin-left: -16px;
 }
-.icon_area tspan { white-space:pre }
-.icon_area .shp0 { fill: #f5c506 } 
+.icon_item tspan { white-space:pre }
+.icon_item .shp0 { fill: #f5c506 } 
 
-.icon_area .icon:hover {
+.icon_item>.icon:hover {
     -webkit-filter: drop-shadow(0 6px 1px rgba(0,0,0,0.5));      
     filter: drop-shadow(0 6px 1px rgba(0,0,0,0.5));  
 }
@@ -274,24 +255,39 @@ header>.title, #list{
   height: 232px;
   width: 315px;
 }
+.block2>img{
+  position: absolute;
+  margin-left: -185px;
+  margin-top: 92px;
+}
 .block3{
-  display: flex;
-  justify-content:center;
+
   align-items: center;
   height: 232px;
   width: 329px;
   background: #ec9e03;
   margin-left: 34px;
 }
-.block3>svg:nth-child(1) tspan { white-space:pre }
-.block3>svg:nth-child(1) .shp0 { fill-opacity: 0.902;fill: #bc7d00 } 
-.block3>svg:nth-child(1){ margin-top: 18px;}
-.block3>svg:nth-child(2)  tspan { white-space:pre }
-.block3>svg:nth-child(2) .shp0 { opacity: 0.702;fill: #ffffff }  
+.block3>svg:nth-child(1) tspan,
+.block3>svg:nth-child(2) tspan  { 
+  white-space:pre;
+}
+.block3>svg:nth-child(1) .shp0 { 
+  fill-opacity: 0.902;
+  fill: #bc7d00 
+} 
+.block3>svg:nth-child(1) { 
+  margin-top: 60px;
+  margin-left: 82px;
+}
+.block3>svg:nth-child(2) .shp0 { 
+  opacity: 0.702;
+  fill: #ffffff; 
+}  
 .block3>svg:nth-child(2){ 
   position: absolute;
-  margin-left: 150px;
-  margin-top: 98px;
+  margin-top: 209px;
+  margin-left: 62px;
 }
 .block3>.number{
   font-size: 25px;
@@ -301,8 +297,8 @@ header>.title, #list{
   font-family: "Segoe WP";
   font-weight: 300;
   position: absolute;
-  margin-left: 134px;
-  margin-top: -88px;
+  margin-top: -186px;
+  margin-left: 285px;
 }
 .block4{
   width: 112px;
@@ -318,20 +314,21 @@ header>.title, #list{
   margin-top: 17px;
   margin-left: 3px;
 }
-.block4>time>span:nth-child(1){
+span.day{
   font-size: 51px;
   letter-spacing: 1px;
   line-height: 38px;
   color: #ffffff;
-  font-family: "Segoe UI Light";
+  font-family: "Segoe UI";
   font-weight: bold;
 }
-.block4>time>span:nth-child(2){
+span.month{
   font-size: 21px;
   letter-spacing: 0px;
   line-height: 38px;
   color: #b26529;
-  font-family: "Segoe UI Light";
+  font-family: "Segoe UI";
+  margin-left: 5px;
 }
 .slider_block{
   height: 81px;
@@ -373,10 +370,7 @@ header>.title, #list{
   background-color: #ec9e03;
   cursor: pointer;
 }
-/* .section_2>.inner_wrapper{
-  display: flex;
-  align-items: stretch;
-} */
+
 .section_2 .title{
   height: 84px;
   display: flex;
@@ -395,27 +389,10 @@ header>.title, #list{
 
 .content>.images{
   width: 597px;
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-evenly;
-  margin-bottom: 49px;
-}
-.content img:nth-child(1){
-  margin-bottom: -41px;
-  margin-left: -10px;
+  padding-top: 8px;
+  margin-left: -2px;
 }
 
-.content img:nth-child(2){
-  margin-right: -6px;
-}
-.content img:nth-child(3){
-  margin-right: 11px;
-}
-.content img:nth-child(4){
-  position: absolute;
-  margin-top: -142px;
-  margin-left: -242px;
-}
 .content>.list{
   width: 423px;
   display: flex;
@@ -426,11 +403,12 @@ header>.title, #list{
   font-weight: 400;
 }
 .content>.list>ul{
-  margin-top: 74px;
+  margin-top: 75px;
   margin-left: 41px;
 }
 .content>.list li{
-  margin-top: 26px;
+  margin-top: 21px;
+  line-height: 1.2;
   padding-left: 33px;
 }
 span.dot{
