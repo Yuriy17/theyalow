@@ -47,11 +47,6 @@ header{
 }
 /*HEADER */
 
-#logo object[data$="4.svg"]{
-  padding-left: 2px;
-  padding-top: 2px;
-  position: absolute;
-}
 #logo object[data$="3.svg"]{
   margin-bottom: -3px;
 }
